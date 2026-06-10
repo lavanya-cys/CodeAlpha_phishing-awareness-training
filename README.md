@@ -21,7 +21,11 @@ Phishing remains one of the most common cyber attacks worldwide. This website pr
 - Interactive knowledge assessment through quizzes
 
 ---
- **Live** [click here](https://lavanya-cys.github.io/CodeAlpha_phishing-awareness-training/)
+
+
+ **Live Demo** [click here](https://lavanya-cys.github.io/CodeAlpha_phishing-awareness-training/)
+
+---
 
 ## ✨ Features
 
