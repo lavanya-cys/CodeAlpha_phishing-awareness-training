@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Awareness Training Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-shield-halved text-gradient"></i> Phish<span>Aware</span>
+            </a>
+            
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="moduleSearch" placeholder="Search modules or tactics...">
+            </div>
+
+            <nav class="nav-links">
+                <a href="#dashboard" class="active">Dashboard</a>
+                <a href="#training-modules">Modules</a>
+                <a href="#quiz-section">Assessment</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-btn" title="Toggle Theme">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+                <div class="overall-progress-container">
+                    <span class="progress-text">Progress: <strong id="progressPercent">0%</strong></span>
+                    <div class="progress-bar-bg">
+                        <div id="overallProgressBar" class="progress-bar-fill" style="width: 0%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section id="dashboard" class="dashboard-hero">
+            <div class="hero-content">
+                <span class="badge">Enterprise-Grade Security Training</span>
+                <h1>Master the Art of <span class="text-gradient">Phishing Defense</span></h1>
+                <p>Equip yourself against modern social engineering threats. Learn to spot cloned domains, malicious payloads, and manipulative psychological psychological triggers used by advanced persistent threats (APTs).</p>
+                <div class="hero-actions">
+                    <a href="#training-modules" class="btn btn-primary">Start Training Portal</a>
+                    <a href="#quiz-section" class="btn btn-secondary">Take Quiz Challenge</a>
+                </div>
+            </div>
+            
+            <div class="dashboard-stats-grid">
+                <div class="stat-card border-accent">
+                    <div class="stat-icon"><i class="fa-solid fa-skull-crossbones"></i></div>
+                    <div class="stat-info">
+                        <h3>90%</h3>
+                        <p>Of all cyber attacks start via a Phishing Email</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-hourglass-half"></i></div>
+                    <div class="stat-info">
+                        <h3>11 Secs</h3>
+                        <p>How often a new ransomware attack occurs globally</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-building-columns"></i></div>
+                    <div class="stat-info">
+                        <h3>$4.8M</h3>
+                        <p>Average cost of an enterprise data breach</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="overview-section card">
+            <div class="section-header">
+                <h2>What is Phishing & Why Does It Matter?</h2>
+                <p class="subtitle">An overview of humanity's most exploited digital vulnerability.</p>
+            </div>
+            <div class="grid-2col">
+                <div>
+                    <p><strong>Phishing</strong> is a form of socially engineered cyber attack where threat actors masquerade as trusted entities to trick individuals into revealing sensitive information, executing malicious links, or downloading radioactive attachments.</p>
+                    <p style="margin-top: 1rem;">Attackers don't just hack systems anymore; they hack <strong>human psychology</strong>. It bypasses firewalls and multi-million dollar encryption pipelines because a legitimate user hands over the keys willingly.</p>
+                    <h4 style="margin-top: 1.5rem; margin-bottom: 0.5rem;">Core Learning Objectives:</h4>
+                    <ul class="styled-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Deconstruct the Phishing Attack Lifecycle.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Audit email headers and URLs for structural anomalies.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Counteract structural psychological triggers (Urgency, Authority).</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Successfully execute threat reporting procedures.</li>
+                    </ul>
+                </div>
+                <div class="lifecycle-box">
+                    <h3>The Phishing Lifecycle</h3>
+                    <div class="timeline">
+                        <div class="timeline-item"><h5>1. Reconnaissance</h5><p>Target profiling via OSINT (LinkedIn, Social Media).</p></div>
+                        <div class="timeline-item"><h5>2. Weaponization</h5><p>Setting up spoofed domains, landing pages, and email kits.</p></div>
+                        <div class="timeline-item"><h5>3. Delivery & Execution</h5><p>Sending the lure; exploiting human curiosity or fear.</p></div>
+                        <div class="timeline-item"><h5>4. Exfiltration/Compromise</h5><p>Harvesting credentials or deploying malware payloads.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="training-modules" class="modules-container">
+            <div class="section-header">
+                <h2>Interactive Training Curriculum</h2>
+                <p class="subtitle">Complete each core unit to build a resilient human firewall.</p>
+            </div>
+
+            <div class="module-card card" data-module="1" id="m1">
+                <div class="module-header">
+                    <div class="module-title-area">
+                        <span class="module-number">Module 01</span>
+                        <h3>Understanding Phishing Architecture</h3>
+                    </div>
+                    <button class="toggle-completion-btn" onclick="toggleModuleComplete(1)">
+                        <i class="fa-regular fa-circle-check"></i> Mark Complete
+                    </button>
+                </div>
+                <div class="module-body">
+                    <p>Phishing is not a purely automated script; it is an organized framework. Threat actors choose their architectures depending on whether they seek high-volume credential harvests or high-value targeted access.</p>
+                    <div class="grid-3col" style="margin-top: 1.5rem;">
+                        <div class="sub-card">
+                            <h5>High-Volume Spray</h5>
+                            <p>Mass emails sent to millions of random addresses mimicking massive brands (Netflix, Amazon, PayPal). Low conversion rates, but highly profitable due to scale.</p>
+                        </div>
+                        <div class="sub-card">
+                            <h5>Targeted Operations</h5>
+                            <p>Carefully tailored schemes targeted at specific corporate layers. Requires intensive background research but achieves massive compromise payouts.</p>
+                        </div>
+                        <div class="sub-card">
+                            <h5>Malicious Infrastructure</h5>
+                            <p>Utilizes dynamic bulletproof hosting services and reverse proxies (like Evilginx) to bypass multi-factor authentication systems in real time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module-card card" data-module="2" id="m2">
+                <div class="module-header">
+                    <div class="module-title-area">
+                        <span class="module-number">Module 02</span>
+                        <h3>Recognizing Phishing Emails</h3>
+                    </div>
+                    <button class="toggle-completion-btn" onclick="toggleModuleComplete(2)">
+                        <i class="fa-regular fa-circle-check"></i> Mark Complete
+                    </button>
+                </div>
+                <div class="module-body">
+                    <p>Modern malicious emails rarely contain broken English and obvious mistakes anymore. AI tools like WormGPT allow attackers to create flawless, highly polished communication profiles.</p>
+                    
+                    <h4 class="section-subheading">Anatomy of an Attack Email</h4>
+                    <div class="email-sandbox">
+                        <div class="email-header-meta">
+                            <div><strong>From:</strong> IT Security Alerts &lt;security-update@micros0ft-support.com&gt; <span class="danger-tag"><i class="fa-solid fa-triangle-exclamation"></i> Lookalike Domain</span></div>
+                            <div><strong>To:</strong> employee@yourcompany.com</div>
+                            <div><strong>Subject:</strong> <span class="urgent-text">[URGENT] Immediate Password Rotation Mandatory</span></div>
+                        </div>
+                        <div class="email-content-preview">
+                            <p>Dear Valued Employee,</p>
+                            <p>Our intrusion detection software has flagged a suspicious login attempt from an unauthorized IP address in Eastern Europe on your account. Failure to verify your profile within <strong>2 hours</strong> will lead to automatic directory termination.</p>
+                            <p><a href="#" onclick="return false;" class="phish-link-mock">Click Here to Verify Identity &rarr;</a> <span class="tooltip-mock">Hover reveals: http://103.24.12.92/login/microsoft</span></p>
+                            <p>Best regards,<br>Corporate Enterprise IT Management</p>
+                        </div>
+                    </div>
+
+                    <div class="grid-2col" style="margin-top: 1.5rem;">
+                        <div class="comparison-card safe">
+                            <div class="comp-title"><i class="fa-solid fa-circle-check"></i> Safe Email Indicators</div>
+                            <ul>
+                                <li>Sender domain perfectly matches official internal directories.</li>
+                                <li>Links route strictly through corporate Single Sign-On (SSO) systems.</li>
+                                <li>No artificial manipulation of time windows (e.g., "Do this within 30 minutes").</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-card unsafe">
+                            <div class="comp-title"><i class="fa-solid fa-skull-crossbones"></i> Red Flag Warning Signs</div>
+                            <ul>
+                                <li><strong>Lookalike Senders:</strong> Uses characters like zeros for 'O's or subtle subdomains.</li>
+                                <li><strong>Hyper-Urgency:</strong> Demands immediate operational bypasses due to high stakes.</li>
+                                <li><strong>Generic Greetings:</strong> Uses broad terms like "Dear Valued Customer" instead of your actual profile name.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module-card card" data-module="3" id="m3">
+                <div class="module-header">
+                    <div class="module-title-area">
+                        <span class="module-number">Module 03</span>
+                        <h3>Fake Website Detection & URL Dissection</h3>
+                    </div>
+                    <button class="toggle-completion-btn" onclick="toggleModuleComplete(3)">
+                        <i class="fa-regular fa-circle-check"></i> Mark Complete
+                    </button>
+                </div>
+                <div class="module-body">
+                    <p>Just because a website displays a <strong>Padlock Icon (HTTPS)</strong> does not mean it is trustworthy. It merely ensures that your data is encrypted while traveling to its destination—even if that destination belongs directly to a cyber criminal.</p>
+                    
+                    <h4 class="section-subheading">URL Manipulation Breakdown</h4>
+                    <div class="url-dissect">
+                        <span class="url-part safe-part">https://login.microsoft.com</span><span class="url-part malicious-part">.attackerdomain.ru</span>/secure/auth
+                    </div>
+                    <p class="caption"><strong>The Rule of the Domain Root:</strong> Always read URLs from left to right up until the first single forward slash (`/`). The true destination is the text immediately preceding that slash, moving backward through the dots.</p>
+
+                    <div class="grid-2col" style="margin-top: 1.5rem;">
+                        <div class="sub-card">
+                            <h5><i class="fa-solid fa-mask"></i> Typosquatting</h5>
+                            <p>Registering common mistyped alternatives of prominent sites (e.g., <code>arnazon.com</code> instead of <code>amazon.com</code>). They exploit spatial errors on standard keyboards.</p>
+                        </div>
+                        <div class="sub-card">
+                            <h5><i class="fa-solid fa-code"></i> Website Cloning</h5>
+                            <p>Using open-source cloning software like HTTrack to instantly copy corporate styling, raw CSS, and layouts down to the exact pixel, substituting only the target action form script.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module-card card" data-module="4" id="m4">
+                <div class="module-header">
+                    <div class="module-title-area">
+                        <span class="module-number">Module 04</span>
+                        <h3>The Phishing Taxonomy Matrix</h3>
+                    </div>
+                    <button class="toggle-completion-btn" onclick="toggleModuleComplete(4)">
+                        <i class="fa-regular fa-circle-check"></i> Mark Complete
+                    </button>
+                </div>
+                <div class="module-body">
+                    <p>Phishing manifests across multiple environments, vectors, and technologies. Review the matrices below to understand alternative deployment mechanisms.</p>
+                    
+                    <div class="taxonomy-grid">
+                        <div class="tax-card">
+                            <span class="tax-tag">Email Phishing</span>
+                            <p><strong>Definition:</strong> Mass untargeted baseline delivery.</p>
+                            <p><strong>Example:</strong> "Your subscription has expired, update billing info immediately."</p>
+                            <p><strong>Defense:</strong> Standard dynamic spam filter rules + manual inspection.</p>
+                        </div>
+                        <div class="tax-card">
+                            <span class="tax-tag">Spear Phishing</span>
+                            <p><strong>Definition:</strong> Hyper-targeted profile campaigns aimed at distinct roles.</p>
+                            <p><strong>Example:</strong> HR employee receives an email containing specific regional contract details.</p>
+                            <p><strong>Defense:</strong> Rigorous public OSINT footprint reduction.</p>
+                        </div>
+                        <div class="tax-card">
+                            <span class="tax-tag">Whaling</span>
+                            <p><strong>Definition:</strong> High-level vectors targeting C-Suite executives exclusively.</p>
+                            <p><strong>Example:</strong> CFO receives custom legal subpoenas requiring sensitive disclosures.</p>
+                            <p><strong>Defense:</strong> Separate, highly isolated executive email routing pipelines.</p>
+                        </div>
+                        <div class="tax-card">
+                            <span class="tax-tag">Smishing (SMS)</span>
+                            <p><strong>Definition:</strong> Text messaging lures requesting interaction.</p>
+                            <p><strong>Example:</strong> "USPS Package on hold due to missing house number. Click link."</p>
+                            <p><strong>Defense:</strong> Never click deep short-links sent via automated numbers.</p>
+                        </div>
+                        <div class="tax-card">
+                            <span class="tax-tag">Vishing (Voice)</span>
+                            <p><strong>Definition:</strong> Over-the-phone corporate voice profiling manipulations.</p>
+                            <p><strong>Example:</strong> "This is IT support calling to help fix your broken Outlook client."</p>
+                            <p><strong>Defense:</strong> Implement out-of-band verification via official directories.</p>
+                        </div>
+                        <div class="tax-card">
+                            <span class="tax-tag">Clone Phishing</span>
+                            <p><strong>Definition:</strong> Swapping trusted links in an old archive email with malicious ones.</p>
+                            <p><strong>Example:</strong> Resending a past internal newsletter, but altering shared documents.</p>
+                            <p><strong>Defense:</strong> Cross-reference delivery context with original senders.</p>
+                        </div>
+                        <div class="tax-card">
+                            <span class="tax-tag">Social Media Phishing</span>
+                            <p><strong>Definition:</strong> Account takeovers via customer service lookalike profiles.</p>
+                            <p><strong>Example:</strong> Fake brand handles answering complaining tweets with helper links.</p>
+                            <p><strong>Defense:</strong> Only message verified profile handles.</p>
+                        </div>
+                        <div class="tax-card">
+                            <span class="tax-tag">BEC (Business Email Compromise)</span>
+                            <p><strong>Definition:</strong> Compromising internal corporate accounts to mimic executive actions.</p>
+                            <p><strong>Example:</strong> A supplier email account asks to divert an upcoming wire payment.</p>
+                            <p><strong>Defense:</strong> Dual-factor out-of-band secondary sign-offs for all financial modifications.</p>
+                        </div>
+                        <div class="tax-card">
+                            <span class="tax-tag">Angler Phishing</span>
+                            <p><strong>Definition:</strong> Attacking consumers utilizing fake support bots.</p>
+                            <p><strong>Example:</strong> Automatic DM offering to fix account restrictions via an API login.</p>
+                            <p><strong>Defense:</strong> Restrict third-party API tokens.</p>
+                        </div>
+                        <div class="tax-card">
+                            <span class="tax-tag">Search Engine Phishing</span>
+                            <p><strong>Definition:</strong> Placing paid malicious search advertisements for mainstream software.</p>
+                            <p><strong>Example:</strong> Spoofed "Download AnyDesk" sponsored link running adware payload.</p>
+                            <p><strong>Defense:</strong> Block or look past sponsored ad labels entirely; use direct host bookmarks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module-card card" data-module="5" id="m5">
+                <div class="module-header">
+                    <div class="module-title-area">
+                        <span class="module-number">Module 05</span>
+                        <h3>Social Engineering & Psychological Exploitation</h3>
+                    </div>
+                    <button class="toggle-completion-btn" onclick="toggleModuleComplete(5)">
+                        <i class="fa-regular fa-circle-check"></i> Mark Complete
+                    </button>
+                </div>
+                <div class="module-body">
+                    <p>Social engineering relies on exploitation of psychological triggers. Attackers manipulate internal biological responses to bypass standard cognitive skepticism.</p>
+                    
+                    <div class="tactics-grid">
+                        <div class="tactic-item"><strong>Authority:</strong> Spoofing the identity of federal investigators, company legal representation, or executive leadership.</div>
+                        <div class="tactic-item"><strong>Fear / Intimidation:</strong> Threatening lawsuits, professional reprimand, or total operational lockout.</div>
+                        <div class="tactic-item"><strong>Urgency:</strong> Establishing narrow time constraints to disrupt critical analytical reasoning processes.</div>
+                        <div class="tactic-item"><strong>Curiosity:</strong> Using filenames like "Q4_Layoffs_Compensation.xlsx" to entice user clicks.</div>
+                        <div class="tactic-item"><strong>Scarcity:</strong> "Only 5 software testing allocations remaining before penalties apply."</div>
+                        <div class="tactic-item"><strong>Trust:</strong> Referencing niche, non-public corporate vocabulary discovered via open-source intel.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module-card card" data-module="6" id="m6">
+                <div class="module-header">
+                    <div class="module-title-area">
+                        <span class="module-number">Module 06</span>
+                        <h3>Real-World High-Impact Case Studies</h3>
+                    </div>
+                    <button class="toggle-completion-btn" onclick="toggleModuleComplete(6)">
+                        <i class="fa-regular fa-circle-check"></i> Mark Complete
+                    </button>
+                </div>
+                <div class="module-body">
+                    <p>Review real-world incident structures to see how small operational failures compromise corporate infrastructure.</p>
+                    
+                    <div class="case-study">
+                        <h5>Case Study A: The $100 Million Tech Whaling Incident</h5>
+                        <p><strong>Method:</strong> Over a multi-year window, external actors set up a lookalike corporate legal shell mimicking a tier-one hardware supplier. They sent beautifully constructed, periodic billing invoices to specific financial officers.</p>
+                        <p><strong>Impact:</strong> Over $100 million in processed wire transfers cleared accounting before reconciliation noticed the routing variations.</p>
+                        <p><strong>Lesson:</strong> Corporate accounting pipelines must separate invoice processing systems from direct bank authorization controls.</p>
+                    </div>
+
+                    <div class="case-study" style="margin-top: 1rem;">
+                        <h5>Case Study B: The MFA Fatigue Identity Infrastructure Attack</h5>
+                        <p><strong>Method:</strong> An attacker compromised an employee's initial password database through basic credential stuffing. They then issued automated Multi-Factor Authentication requests to the employee's phone at 3:00 AM repeatedly.</p>
+                        <p><strong>Impact:</strong> Exhausted by the recurring push notifications, the employee approved the validation request, granting attackers full remote cloud infrastructure control.</p>
+                        <p><strong>Lesson:</strong> Companies should implement MFA with number matching requirements rather than basic, one-click push approvals.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="module-card card" data-module="7" id="m7">
+                <div class="module-header">
+                    <div class="module-title-area">
+                        <span class="module-number">Module 07</span>
+                        <h3>Universal Cyber Security Best Practices</h3>
+                    </div>
+                    <button class="toggle-completion-btn" onclick="toggleModuleComplete(7)">
+                        <i class="fa-regular fa-circle-check"></i> Mark Complete
+                    </button>
+                </div>
+                <div class="module-body">
+                    <div class="grid-2col">
+                        <div>
+                            <h4>The Human Firewall Checklist</h4>
+                            <p>Integrate these structural protective steps into your day-to-day work habits to mitigate threat actions effectively:</p>
+                            <ul class="styled-list" style="margin-top: 1rem;">
+                                <li><i class="fa-solid fa-shield"></i> Use a hardware or application-based password manager.</li>
+                                <li><i class="fa-solid fa-key"></i> Enforce FIDO2 / WebAuthn cryptographically signed hardware keys where possible.</li>
+                                <li><i class="fa-solid fa-eye"></i> Hover and dissect all hyperlink domains before clicking.</li>
+                                <li><i class="fa-solid fa-phone-slash"></i> Verify unexpected out-of-band updates through verified directories.</li>
+                            </ul>
+                        </div>
+                        <div class="reporting-box">
+                            <h4><i class="fa-solid fa-bullhorn"></i> How to Report an Attack</h4>
+                            <p>If you encounter an anomaly, follow these steps immediately:</p>
+                            <ol style="padding-left: 1.2rem; margin-top: 0.5rem;">
+                                <li>Do not forward the message directly (avoids accidental clicking). Export it as an <code>.eml</code> attachment.</li>
+                                <li>Send it directly to your designated security operations email address (e.g., <code>security@company.com</code>).</li>
+                                <li>Purge the suspicious message completely from your deleted items folder.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz-section" class="quiz-container card">
+            <div class="section-header">
+                <h2>Interactive Knowledge Assessment</h2>
+                <p class="subtitle">Complete the 15-question evaluation below. A passing score requires 80% accuracy.</p>
+            </div>
+
+            <div id="quiz-start-screen" class="quiz-screen text-center">
+                <i class="fa-solid fa-graduation-cap quiz-intro-icon text-gradient"></i>
+                <h3>Ready to Verify Your Knowledge?</h3>
+                <p>This assessment covers technical architecture, phishing taxonomy, psychological vectors, and defensive procedures.</p>
+                <button id="startQuizBtn" class="btn btn-primary" style="margin-top: 1.5rem;">Begin Examination</button>
+            </div>
+
+            <div id="quiz-play-screen" class="quiz-screen hidden">
+                <div class="quiz-progress-meta">
+                    <span>Question <strong id="currentQuestionNum">1</strong> of 15</span>
+                    <span>Current Score: <strong id="liveScore">0</strong></span>
+                </div>
+                <div class="progress-bar-bg" style="margin-bottom: 2rem;">
+                    <div id="quizLiveProgress" class="progress-bar-fill" style="width: 0%;"></div>
+                </div>
+
+                <div id="questionContainer" class="question-text">
+                    </div>
+
+                <div id="optionsContainer" class="options-grid">
+                    </div>
+
+                <div id="feedbackContainer" class="feedback-box hidden">
+                    </div>
+
+                <div class="quiz-controls">
+                    <button id="nextQuestionBtn" class="btn btn-primary hidden">Proceed to Next Question <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div id="quiz-results-screen" class="quiz-screen text-center hidden">
+                <div id="resultIcon"></div>
+                <h3 id="resultHeading">Assessment Concluded</h3>
+                <p id="resultSummary" style="font-size: 1.2rem; margin: 1rem 0;"></p>
+                <div id="resultBadge"></div>
+                <button id="restartQuizBtn" class="btn btn-secondary" style="margin-top: 2rem;"><i class="fa-solid fa-rotate-right"></i> Restart Assessment</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <p>&copy; 2026 PhishAware Platform. Built exclusively with secure standalone web standards.</p>
+            <p style="opacity: 0.6; font-size: 0.85rem; margin-top: 0.5rem;">Confidential Learning Infrastructure &bull; Designed for Internal Compliance Training</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
