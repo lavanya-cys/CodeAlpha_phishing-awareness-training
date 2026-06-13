@@ -128,7 +128,7 @@ Phishing-Awareness-Training/
 ├── README.md
 └── screenshots/
     ├── home.png
-    ├── phishing.png
+    ├── module.png
     └── quiz.png
 ```
 
