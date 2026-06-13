@@ -22,6 +22,11 @@ Phishing remains one of the most common cyber attacks worldwide. This website pr
 
 ---
 
+
+ **Live Demo** [click here](https://lavanya-cys.github.io/CodeAlpha_phishing-awareness-training/)
+
+---
+
 ## ✨ Features
 
 ### 🏠 Home Module
@@ -138,7 +143,7 @@ Phishing-Awareness-Training/
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/phishing-awareness-training.git
+git clone https://github.com/lavanya-cys/CodeAlpha_phishing-awareness-training.git
 ```
 
 Open:
@@ -169,31 +174,16 @@ After completing this training, users will be able to:
 
 ---
 
-## 📸 Screenshots
 
-Add screenshots of your website here.
-
-Example:
-
-```md
-![Home Page](screenshots/home.png)
-
-![Types of Phishing](screenshots/types.png)
-
-![Quiz Module](screenshots/quiz.png)
-```
-
----
 
 ## 🔮 Future Improvements
 
-- Certificate Generation
 - Progress Tracking
 - User Authentication
 - Dark / Light Mode
 - Phishing Simulation Lab
 - Advanced Quiz Analytics
-- Leaderboard System
+
 
 ---
 
@@ -207,24 +197,6 @@ This project was developed for cybersecurity awareness and educational purposes 
 
 **Lavanya**
 
-Cybersecurity Enthusiast | Web Development Learner | Problem Solver
+Cybersecurity Enthusiast 
 
 ---
-
-## ⭐ Show Your Support
-
-If you found this project useful:
-
-⭐ Star this repository
-
-🍴 Fork this repository
-
-📢 Share it with others
-
----
-
-## 📄 License
-
-This project is intended for educational and awareness purposes.
-
-Free to use and modify for learning and training.
