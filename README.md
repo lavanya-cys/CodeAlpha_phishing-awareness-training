@@ -156,6 +156,21 @@ No installation or dependencies are required.
 
 ---
 
+## 📸 Screenshots
+
+### Home Page
+
+![Home Page](screenshots/home.png)
+
+### Modules
+
+![Modules](screenshots/module.png)
+
+### Quiz Module
+
+![Quiz Module](screenshots/quiz.png)
+
+
 ## 🎓 Learning Outcomes
 
 After completing this training, users will be able to:
