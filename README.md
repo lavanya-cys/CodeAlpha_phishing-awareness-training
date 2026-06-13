@@ -125,7 +125,11 @@ Phishing-Awareness-Training/
 ├── index.html
 ├── style.css
 ├── script.js
-└── README.md
+├── README.md
+└── screenshots/
+    ├── home.png
+    ├── phishing.png
+    └── quiz.png
 ```
 
 ---
